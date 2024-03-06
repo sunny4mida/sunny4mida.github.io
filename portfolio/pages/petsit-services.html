@@ -5,58 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pet Sitters Rental - Services</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="petsit-services.css">
+  <link rel="stylesheet" href="../styles/petsit-services.css">
+  <link rel="stylesheet" href="../styles/bootstrap.min.css">
 </head>
+
 <body>
-  <header class="header">
-    <a href="petsit-home.html" class="logo">
-      <img src="sit-high-resolution-logo.png" alt="Sit Logo">
+  <header class="header-fixed-top">
+    <a href="C:\laragon\sunny4mida.github.io\portfolio\pages\petsit-home.html" class="logo">
+      <img src="C:\laragon\sunny4mida.github.io\portfolio\images\sit-high-resolution-logo.png" alt="Sit Logo">
     </a>
     <nav class="nav">
       <ul class="nav-menu">
-        <li><a href="petsit-home.html">Home</a></li>
-        <li><a href="petsit-about.html">About</a></li>
-        <li><a href="petsit-services.html">Services</a></li>
-        <li><a href="petsit-contact.html">Contact</a></li>
+        <li><a href="./petsit-home.html">Home</a></li>
+        <li><a href="./petsit-about.html">About</a></li>
+        <li><a href="./petsit-services.html">Services</a></li>
+        <li><a href="./petsit-contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="main-content">
     <section class="services">
-      <h2>Our Services</h2>
+      <div class="col-md-12 col-lg-12 col-xl-12">
+      <h2 style="font-weight: bold">Our Services</h2>
       <div class="services-list">
         <div class="service">
-        <h3>Pet Sit</h3>
-          <img src="pet-sit-service.jpg" alt="Service 1" class="service-image">
+        <h3 style="font-weight: bold">Pet Sit</h3>
+          <img src="../images/pet-sit-service.jpg" alt="Service 1" class="service-image">
           <p>
             Need someone to shower your furry friend with love and attention while you're away for a few hours? </p> <p> Our Pet Sit service connects you with a dedicated Pawtner who'll visit your pet at home. They'll engage in a variety of activities to keep your companion happy and healthy, including walks, playtime, feeding, and even taking them to the vet if needed. Think of it as having a trusted friend pop in to brighten your pet's day!
           </p>
         </div>
         <div class="service">
-        <h3>Pet Nanny</h3>
-          <img src="pet-nany-service.jpg" alt="Service 2" class="service-image">
+        <h3 style="font-weight: bold">Pet Nanny</h3>
+          <img src="../images/pet-nany-service.jpg" alt="Service 2" class="service-image">
           <p>
             Going on an extended trip but worried about leaving your pet behind? </p><p>Our Pet Nanny service offers the perfect solution. A Pawtner will stay in your home, providing 24/7 care and companionship for your pet for a minimum of 3 days. This ensures your furry friend receives familiar surroundings and personalized attention while you're away. Remember to provide food and comfortable sleeping arrangements for your Pawtner during their stay.
           </p>
         </div>
         <div class="service">
-        <h3>Vet Sit</h3>
-          <img src="vet-sit-service.jpg" alt="Service 3" class="service-image">
+        <h3 style="font-weight: bold">Vet Sit</h3>
+          <img src="../images/vet-sit-service.jpg" alt="Service 3" class="service-image">
           <p>
             Can't pawsibly get to the vet? Let the vet "Vet Sit" you! </p><p> This 24/7 online service brings qualified vets straight to your furry friend's side (well, virtually speaking!). Whether you're short on time, facing an emergency, or simply prefer the convenience of home, our vets are here to address your concerns and offer expert advice. Skip the clinic hustle and Vet Sit your worries away with a purrfectly convenient consultation.
             </p>
         </div>
       </div>
+    </div>
       <section class="cta">
-        <h2>Schedule Your PAWsome Pet Sitting Today!</h2>
-        <button class="cta-button" onclick="window.location.href='petsit-contact.html'">Contact Us</button>
+        <h2 style="font-weight: bold">Schedule Your PAWsome Pet Sitting Today!</h2>
+        <button class="cta-button" onclick="window.location.href='./petsit-contact.html'">Contact Us</button>
       </section>
-    </section>
+      
+      </section>
   </main>
 
   <footer class="footer">
     <p>&copy; 2024 SIT! PH</p>
   </footer>
+
+ 
 </body>
 </html>
