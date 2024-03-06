@@ -97,6 +97,11 @@ body {
   text-align: center; 
   display: flex;
   justify-content: center;
+  transition: all 0.3s ease;
+  }
+
+  .service-image:hover {
+    filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.4));
   }
   
   .services p {
