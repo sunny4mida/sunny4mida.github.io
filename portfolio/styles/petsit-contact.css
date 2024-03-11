@@ -6,39 +6,45 @@ body {
   color: #091627;
 }
 
-.header-fixed-top {
+.header {
   background-color: #fefff7;
   color: #fefff7;
   padding: 20px 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: fixed;  
-  top: 0;  
-  left: 0;  
-  width: 100%;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
 }
-  
-  .nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .nav-menu {
-    list-style: none;
-    margin: 1px;
-    padding: 1px;
-  }
-  
-.nav-menu li {
-  display: inline-block;
-  margin-right: 20px;
-  font-size: 30px;
-  font-family: 'Baskervville', serif !important; 
+
+.navbar {
+  background-color: #fefff7;
+  color: #091627;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
-  
-.nav-menu a {
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto; 
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
   color: #091627;
   text-decoration: none;
   font-weight: bold;
@@ -46,106 +52,102 @@ body {
   margin: 4px 4px 4px 4px;
   padding: 10px 15px; 
   box-shadow: none;
-  transition: box-shadow .3s ease; 
-  transition: color .18s ease;
 }
-  
-.nav-menu a:hover {
+
+.nav-link:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  color: #ffcc00;
+  color: #ffcc00 !important; 
 }
-  
-.nav-menu a:active {
+
+.nav-link:active {
   opacity: 0.68;
+}
+
+.navbar .nav-link {
+  font-size: 30px;
+  font-family: 'Baskervville', serif !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: inherit; 
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #091627; 
 }
 
 .main-content {
   padding-top: 120px; 
 }
 
-.logo {
-  margin-right: 20px; 
-}
-  
-.logo img {
-  max-width: 200px; 
-  height: auto;
-  transition: all 0.3s ease;
-}
-  
-.logo:hover img {
-  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+  font-family: "Baskervville", serif !important;
+  font-size: 20px;
 }
 
-.logo:active img {
+.contact p {
+  max-width: 800px;
+  margin: 10px auto; 
+  line-height: 1.5;
+}
+
+.form-group {
+  margin: 30px 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #fefff7;
+  color: #091627;
+  border-style: solid;
+  border-color: #091627;
+  font-size: larger;
+  font-weight: bold;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: auto;
+  transition: background-color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.submit-button:hover {
+  background-color: #091627;
+  color: #ffcc00;
+}
+
+.submit-button:active {
   opacity: 0.68;
 }
 
-  .contact {
-    padding: 80px 20px;
-    text-align: center;
-    font-family: "Baskervville", serif !important;
-    font-size: 20px;
-  }
-  
-  .contact p {
-    max-width: 800px;
-    margin: 10px auto; 
-    line-height: 1.5;
-  }
-  
-  .form-group {
-    margin: 30px 30px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  .submit-button {
-    background-color: #fefff7;
-    color: #091627;
-    border-style: solid;
-    border-color: #091627;
-    font-size: larger;
-    font-weight: bold;
-    height: 50px;
-    width: 200px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: auto;
-    transition: background-color 0.3s ease-out;
-    transition: color 0.3s ease-out;
-  }
-  
-  .submit-button:hover {
-    background-color: #091627;
-    color: #ffcc00;
-  }
-  
-  .submit-button:active {
-    opacity: 0.68;
-  }
-
-  .footer {
-    text-align: center;
-    padding: 20px;
-  }
+.footer {
+  text-align: center;
+  padding: 20px;
+}
